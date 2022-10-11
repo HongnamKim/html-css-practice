@@ -1,3 +1,3 @@
-# kokoa-clone
+# HTML-CSS Practice
 
 asdfasdfasdf
