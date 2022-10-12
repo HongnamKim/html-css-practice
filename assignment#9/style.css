@@ -1,0 +1,163 @@
+body {
+  margin: 0px 0px;
+  padding: 0px 0px;
+
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.background__turq {
+  background-color: turquoise;
+  width: 420px;
+  height: 640px;
+  padding: 15px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.background__white {
+  background-color: white;
+  width: 380px;
+  height: 600px;
+  padding: 25px;
+}
+
+.title {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.title--img {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 33%;
+}
+
+.title--text {
+  width: 33%;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.play {
+  display: flex;
+  margin: 25px 0px;
+  padding: 0px;
+}
+
+.play--album {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  background-color: rgb(255 192 46);
+  border: 2px solid black;
+  border-radius: 15px;
+  margin-right: 15px;
+}
+
+.play--info {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+}
+
+.play--info span:first-child {
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.play--info span:last-child {
+  font-size: 20px;
+  font-weight: 500;
+}
+.buttons {
+  display: flex;
+  justify-content: flex-start;
+  margin: 25px 0px;
+  padding: 0px;
+}
+
+.buttons--play {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 50px;
+  border: 2px solid black;
+  border-bottom: 4px solid black;
+  border-radius: 15px;
+  margin-right: 15px;
+}
+.buttons--play__img {
+  margin: 5px;
+}
+.buttons--play__text {
+  margin: 5px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.buttons--circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid black;
+  border-bottom: 4px solid black;
+  margin-right: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cross {
+  transform: rotateZ(45deg);
+}
+
+.playlist--content {
+  height: 50px;
+
+  padding: 0%;
+  margin: 25px 0px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.playlist--content--album {
+  width: 50px;
+  height: 50px;
+  border: 2px solid black;
+  border-radius: 15px;
+}
+
+.playlist--content--info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  margin: 15px;
+}
+
+.playlist div:first-child .playlist--content--album {
+  background-color: tomato;
+}
+
+.playlist div:nth-child(2) .playlist--content--album {
+  background-color: pink;
+}
+
+.playlist div:nth-child(3) .playlist--content--album {
+  background-color: blue;
+}
+
+.playlist div:last-child .playlist--content--album {
+  background-color: turquoise;
+}
+
+.playlist--content--info span:first-child {
+  font-weight: bold;
+}
