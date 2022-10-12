@@ -1,114 +1,134 @@
 body {
   margin: 0px 0px;
-  padding: 0px 0px;
 
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-}
-
-.background__turq {
   background-color: turquoise;
-  width: 420px;
-  height: 640px;
-  padding: 15px 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-.background__white {
+.background--white {
+  border: 1px solid red;
+  margin: 10px 10px;
+  padding: 10px 10px;
   background-color: white;
-  width: 380px;
-  height: 600px;
-  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .title {
   display: flex;
-  justify-content: flex-start;
+  margin: 10vmin 5vmin 5vmin 5vmin;
 }
 
-.title--img {
+.title--logo {
+  border: 1px solid red;
+  width: 33%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  width: 33%;
 }
 
 .title--text {
+  border: 1px solid red;
   width: 33%;
-  font-size: 25px;
-  font-weight: bold;
-  text-align: center;
-}
-
-.play {
-  display: flex;
-  margin: 25px 0px;
-  padding: 0px;
-}
-
-.play--album {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 150px;
-  height: 150px;
-  background-color: rgb(255 192 46);
-  border: 2px solid black;
-  border-radius: 15px;
-  margin-right: 15px;
 }
 
-.play--info {
+.title--text span {
+  font-size: 7vmin;
+  font-weight: bold;
+}
+
+.playing {
+  display: flex;
+  border: 1px solid red;
+  margin: 5vmin;
+  height: 35vmin;
+}
+
+.playing--album {
+  height: 35vmin;
+  width: 35vmin;
+  border: 2px solid black;
+  border-radius: 3vmin;
+  background-color: rgb(255 192 46);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.playing--info {
+  border: 1px solid red;
+  width: 45%;
+  margin: 2vmin 0vmin 2vmin 5vmin;
   display: flex;
   flex-direction: column;
-  width: 200px;
+  justify-content: space-evenly;
 }
 
-.play--info span:first-child {
-  font-size: 45px;
+.playing--info--title {
+  font-size: 8vmin;
   font-weight: bold;
 }
 
-.play--info span:last-child {
-  font-size: 20px;
-  font-weight: 500;
-}
-.buttons {
-  display: flex;
-  justify-content: flex-start;
-  margin: 25px 0px;
-  padding: 0px;
+.playing--info--singer {
+  font-size: 4vmin;
 }
 
-.buttons--play {
+.buttons {
+  border: 1px solid red;
+  display: flex;
+  margin: 5vmin;
+}
+
+.buttons--square--container {
+  border: 1px solid red;
+  width: 50%;
+
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 180px;
-  height: 50px;
+}
+.buttons--circle--container {
+  border: 1px solid red;
+  width: 25%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttons--square {
+  width: 40vmin;
+  height: 15vmin;
   border: 2px solid black;
   border-bottom: 4px solid black;
-  border-radius: 15px;
-  margin-right: 15px;
+  border-radius: 3vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.buttons--play__img {
-  margin: 5px;
+
+.buttons--square i {
+  margin: 1vmin;
 }
-.buttons--play__text {
-  margin: 5px;
-  font-size: 25px;
+
+.buttons--square span {
+  margin: 1vmin;
+  font-size: 4.5vmin;
   font-weight: bold;
 }
 
 .buttons--circle {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
+  width: 18vmin;
+  height: 18vmin;
   border: 2px solid black;
   border-bottom: 4px solid black;
-  margin-right: 15px;
+  border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -118,46 +138,57 @@ body {
   transform: rotateZ(45deg);
 }
 
-.playlist--content {
-  height: 50px;
-
-  padding: 0%;
-  margin: 25px 0px;
-  display: flex;
-  justify-content: flex-start;
-}
-
-.playlist--content--album {
-  width: 50px;
-  height: 50px;
-  border: 2px solid black;
-  border-radius: 15px;
-}
-
-.playlist--content--info {
+.list {
+  border: 1px solid red;
+  margin: 5vmin;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-
-  margin: 15px;
 }
 
-.playlist div:first-child .playlist--content--album {
+.list--songs {
+  display: flex;
+  border: 1px solid red;
+  margin-bottom: 5vmin;
+}
+
+.list--songs--album {
+  width: 15vmin;
+  height: 15vmin;
+  border: 2px solid black;
+  border-radius: 3vmin;
+}
+
+.list div:first-child .list--songs--album {
   background-color: tomato;
 }
 
-.playlist div:nth-child(2) .playlist--content--album {
+.list div:nth-child(2) .list--songs--album {
   background-color: pink;
 }
 
-.playlist div:nth-child(3) .playlist--content--album {
+.list div:nth-child(3) .list--songs--album {
   background-color: blue;
 }
 
-.playlist div:last-child .playlist--content--album {
+.list div:last-child .list--songs--album {
   background-color: turquoise;
 }
 
-.playlist--content--info span:first-child {
-  font-weight: bold;
+.list--songs--info {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  margin-left: 3vmin;
+  justify-content: space-evenly;
+}
+
+.list--songs--info--title {
+  font-size: 4.5vmin;
+  font-weight: 650;
+}
+
+.list--songs--info--singer {
+  font-size: 3vmin;
+  font-weight: 300;
 }
