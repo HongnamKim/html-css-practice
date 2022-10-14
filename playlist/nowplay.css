@@ -13,7 +13,7 @@
   height: 80px;
   width: 370px;
   margin: 10px;
-  margin-bottom: 15px;
+  margin-bottom: 40px;
   border-radius: 40px;
   background-color: var(--text-main);
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3), -2px -2px 5px rgba(0, 0, 0, 0.3);
@@ -44,15 +44,22 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  color: var(--bg-sub);
 }
 
-.nowPlaying__btn div {
+.nowPlaying__btn button {
+  border: none;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0);
+  color: var(--bg-sub);
+}
+.nowPlaying__btn button:hover {
+  cursor: pointer;
 }
 
-.nowPlaying__btn__pause {
+.nowPlaying__btn__pause i {
   color: var(--bg-main);
 }

@@ -10,6 +10,14 @@
   <body>
     <div class="left">
       <nav class="nav">
+        <div class="notch"></div>
+        <div class="status-bar">
+          <div class="status-bar__left"><span>SKT</span></div>
+          <div class="status-bar__right">
+            <i class="fa-solid fa-signal"></i><i class="fa-solid fa-wifi"></i
+            ><i class="fa-solid fa-battery-three-quarters fa-lg"></i>
+          </div>
+        </div>
         <ul class="nav__list">
           <li class="nav__btn">
             <a class="nav__link" href="#"
@@ -28,77 +36,100 @@
           <div class="profile__pic">
             <img src="img/Yorushika_Logo.jpg" width="100%" />
           </div>
-          <h2 class="profile__singer">Yorushika(ヨルシカ)</h2>
+          <h2 class="profile__singer">Yorushika (ヨルシカ)</h2>
           <h3 class="profile__jenre">J-pop, Rock</h3>
           <div class="profile__btn">
-            <div class="profile__btn__shuffle"><span>Shuffle</span></div>
-            <div class="profile__btn__subs">
-              <span><i class="fa-solid fa-heart"></i>257M</span>
-            </div>
+            <button class="profile__btn__shuffle">
+              <i class="fa-solid fa-shuffle fa-lg"></i><span>Shuffle</span>
+            </button>
+            <button class="profile__btn__subs">
+              <i class="fa-solid fa-heart fa-lg"></i><span>2.57M</span>
+            </button>
           </div>
         </div>
+
         <div class="playList">
           <ul class="playList__list">
-            <li class="playList__song">
-              <div class="playList__song__cover">
-                <img src="img/2nd-album.jpeg" width="100%" />
-              </div>
-              <div class="playList__song__info">
-                <h3>그저 네게 맑아라</h3>
-                <h4>요루시카•패배자에게 앵콜은 필요 없어</h4>
-              </div>
-              <div class="playList__song__btn">
-                <i class="fa-solid fa-ellipsis-vertical fa-lg"></i>
-              </div>
-            </li>
-            <li class="playList__song">
-              <div class="playList__song__cover">
-                <img src="img/1st-full-album.jpeg" width="100%" />
-              </div>
-              <div class="playList__song__info">
-                <h3>그래서 나는 음악을 그만두었다</h3>
-                <h4>요루시카•그래서 나는 음악을 그만두었다</h4>
-              </div>
-              <div class="playList__song__btn">
-                <i class="fa-solid fa-ellipsis-vertical fa-lg"></i>
-              </div>
-            </li>
-            <li class="playList__song" id="now">
-              <div class="playList__song__cover">
-                <img src="img/1st-mini-album.jpeg" width="120%" />
-              </div>
-              <div class="playList__song__info">
-                <h3>말해줘｡</h3>
-                <h4>요루시카•여름풀이 방해를 해</h4>
-              </div>
-              <div class="playList__song__btn">
-                <i class="fa-solid fa-ellipsis-vertical fa-lg"></i>
-              </div>
-            </li>
-            <li class="playList__song">
-              <div class="playList__song__cover">
-                <img src="img/3rd-full-album.jpeg" width="100%" />
-              </div>
-              <div class="playList__song__info">
-                <h3>꽃에 망령</h3>
-                <h4>요루시카•도작</h4>
-              </div>
-              <div class="playList__song__btn">
-                <i class="fa-solid fa-ellipsis-vertical fa-lg"></i>
-              </div>
-            </li>
-            <li class="playList__song">
-              <div class="playList__song__cover">
-                <img src="img/chinokate.jpeg" width="100%" />
-              </div>
-              <div class="playList__song__info">
-                <h3>チノカテ</h3>
-                <h4>요루시카•チノカテchi</h4>
-              </div>
-              <div class="playList__song__btn">
-                <i class="fa-solid fa-ellipsis-vertical fa-lg"></i>
-              </div>
-            </li>
+            <button class="playList__btn">
+              <li class="playList__song">
+                <div class="playList__song__cover">
+                  <img src="img/2nd-album.jpeg" width="100%" />
+                </div>
+                <div class="playList__song__info">
+                  <h3>그저 네게 맑아라</h3>
+                  <h4>요루시카 • 패배자에게 앵콜은 필요 없어</h4>
+                </div>
+                <div class="playList__song__btn">
+                  <a href="#"
+                    ><i class="fa-solid fa-ellipsis-vertical fa-lg"></i
+                  ></a>
+                </div>
+              </li>
+            </button>
+            <button class="playList__btn">
+              <li class="playList__song">
+                <div class="playList__song__cover">
+                  <img src="img/1st-full-album.jpeg" width="100%" />
+                </div>
+                <div class="playList__song__info">
+                  <h3>그래서 나는 음악을 그만두었다</h3>
+                  <h4>요루시카 • 그래서 나는 음악을 그만두었다</h4>
+                </div>
+                <div class="playList__song__btn">
+                  <a href="#"
+                    ><i class="fa-solid fa-ellipsis-vertical fa-lg"></i
+                  ></a>
+                </div>
+              </li>
+            </button>
+            <button class="playList__btn">
+              <li class="playList__song" id="now">
+                <div class="playList__song__cover">
+                  <img src="img/1st-mini-album.jpeg" width="120%" />
+                </div>
+                <div class="playList__song__info">
+                  <h3>말해줘｡</h3>
+                  <h4>요루시카 • 여름풀이 방해를 해</h4>
+                </div>
+                <div class="playList__song__btn">
+                  <a href="#"
+                    ><i class="fa-solid fa-ellipsis-vertical fa-lg"></i
+                  ></a>
+                </div>
+              </li>
+            </button>
+            <button class="playList__btn">
+              <li class="playList__song">
+                <div class="playList__song__cover">
+                  <img src="img/3rd-full-album.jpeg" width="100%" />
+                </div>
+                <div class="playList__song__info">
+                  <h3>꽃에 망령</h3>
+                  <h4>요루시카 • 도작</h4>
+                </div>
+                <div class="playList__song__btn">
+                  <a href="#"
+                    ><i class="fa-solid fa-ellipsis-vertical fa-lg"></i
+                  ></a>
+                </div>
+              </li>
+            </button>
+            <button class="playList__btn">
+              <li class="playList__song">
+                <div class="playList__song__cover">
+                  <img src="img/chinokate.jpeg" width="100%" />
+                </div>
+                <div class="playList__song__info">
+                  <h3>チノカテ</h3>
+                  <h4>요루시카 • チノカテchi</h4>
+                </div>
+                <div class="playList__song__btn">
+                  <a href="#"
+                    ><i class="fa-solid fa-ellipsis-vertical fa-lg"></i
+                  ></a>
+                </div>
+              </li>
+            </button>
           </ul>
         </div>
       </article>
@@ -111,21 +142,30 @@
             </h4>
           </div>
           <div class="nowPlaying__btn">
-            <div class="nowPlaying__btn__previous">
+            <button class="nowPlaying__btn__previous">
               <i class="fa-solid fa-backward-step fa-xl"></i>
-            </div>
-            <div class="nowPlaying__btn__pause">
+            </button>
+            <button class="nowPlaying__btn__pause">
               <i class="fa-solid fa-pause fa-2x"></i>
-            </div>
-            <div class="nowPlaying__btn__next">
+            </button>
+            <button class="nowPlaying__btn__next">
               <i class="fa-solid fa-forward-step fa-xl"></i>
-            </div>
+            </button>
           </div>
         </div>
       </div>
+      <div class="home-bar"></div>
     </div>
     <div class="right">
       <nav class="nav">
+        <div class="notch"></div>
+        <div class="status-bar">
+          <div class="status-bar__left"><span>SKT</span></div>
+          <div class="status-bar__right">
+            <i class="fa-solid fa-signal"></i><i class="fa-solid fa-wifi"></i
+            ><i class="fa-solid fa-battery-three-quarters fa-lg"></i>
+          </div>
+        </div>
         <ul class="nav__list">
           <li class="nav__btn">
             <a class="nav__link" href="#"
@@ -139,7 +179,8 @@
           </li>
         </ul>
       </nav>
-      <article>
+
+      <div class="right__article">
         <div class="album">
           <div class="album__cover">
             <img src="img/1st-mini-album.jpeg" width="120%" />
@@ -168,7 +209,7 @@
             <i class="fa-solid fa-backward-step fa-3x"></i>
           </div>
           <div class="play-btn__play">
-            <i class="fa-solid fa-play fa-4x"></i>
+            <i class="fa-solid fa-play fa-3x"></i>
           </div>
           <div class="play-btn__change">
             <i class="fa-solid fa-forward-step fa-3x"></i>
@@ -177,7 +218,8 @@
             <i class="fa-solid fa-shuffle fa-lg"></i>
           </div>
         </div>
-      </article>
+      </div>
+      <div class="home-bar"></div>
     </div>
     <script
       src="https://kit.fontawesome.com/d6d812d2c1.js"
