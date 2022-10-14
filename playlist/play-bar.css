@@ -1,0 +1,54 @@
+.play-bar {
+  width: var(--phone-width);
+  position: absolute;
+  top: 525px;
+  height: 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.play-bar__time {
+  margin: 0px 20px;
+  width: 340px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.play-bar__progress {
+  margin: 0px 20px;
+  width: 350px;
+  height: 25px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+}
+
+.play-bar__progress__previous {
+  border-color: var(--text-main);
+  background-color: var(--text-main);
+  width: 168px;
+  height: 4px;
+  border-radius: 2px 0px 0px 2px;
+  position: absolute;
+}
+.play-bar__progress__now {
+  border-color: var(--text-main);
+  background-color: var(--text-main);
+  width: 12px;
+  height: 12px;
+  border-radius: 6px;
+  position: absolute;
+  left: 167px;
+}
+
+.play-bar__progress__reserve {
+  background-color: var(--text-sub);
+  width: 182px;
+  height: 4px;
+  border-radius: 0px 2px 2px 0px;
+  position: absolute;
+  left: 168px;
+}

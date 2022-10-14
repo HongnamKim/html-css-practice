@@ -1,0 +1,64 @@
+.playList {
+  width: var(--phone-width);
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 310px;
+}
+
+.playList__list {
+  width: 350px;
+  height: 400px;
+}
+
+.playList__song {
+  width: 350px;
+  height: 90px;
+  margin-bottom: 10px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  overflow-y: hidden;
+}
+
+.playList__song__cover {
+  width: 70px;
+  height: 70px;
+  margin: 15px;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.playList__song__info {
+  height: 70px;
+  width: 200px;
+}
+
+.playList__song__info h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: var(--text-main);
+}
+
+.playList__song__info h4 {
+  font-size: 15px;
+  color: var(--text-sub);
+}
+
+.playList__song__btn {
+  margin: 15px;
+}
+
+.playList__song__btn i {
+  color: var(--text-sub);
+}
+
+#now {
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2), -2px -2px 5px rgba(0, 0, 0, 0.2);
+}

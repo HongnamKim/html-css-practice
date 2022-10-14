@@ -1,0 +1,58 @@
+.nowPlaying {
+  border-radius: 0px 0px 40px 40px;
+  width: var(--phone-width);
+  height: 100px;
+  position: absolute;
+  bottom: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nowPlaying__bg {
+  height: 80px;
+  width: 370px;
+  margin: 10px;
+  margin-bottom: 15px;
+  border-radius: 40px;
+  background-color: var(--text-main);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3), -2px -2px 5px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+}
+
+.nowPlaying__info {
+  margin-left: 30px;
+}
+
+.nowPlaying__info__title {
+  color: var(--bg-main);
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.nowPlaying__info__singer {
+  color: var(--bg-sub);
+  font-size: 15px;
+}
+
+.nowPlaying__btn {
+  width: 150px;
+  height: 80px;
+  position: absolute;
+  right: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: var(--bg-sub);
+}
+
+.nowPlaying__btn div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nowPlaying__btn__pause {
+  color: var(--bg-main);
+}

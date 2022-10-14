@@ -1,0 +1,73 @@
+.profile {
+  display: flex;
+  flex-direction: column;
+
+  width: var(--phone-width);
+  height: 300px;
+  align-items: center;
+  justify-content: space-evenly;
+  top: 10px;
+  position: absolute;
+}
+
+.profile__pic {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2), 0px -3px 5px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.profile__singer {
+  color: var(--text-main);
+  font-size: 30px;
+}
+
+.profile__jenre {
+  color: var(--text-sub);
+  font-size: 20px;
+}
+
+.profile__btn {
+  width: 90%;
+  height: 80px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.profile__btn div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile__btn__shuffle {
+  width: 40%;
+  height: 60px;
+  border-radius: 30px;
+  background-color: var(--text-main);
+}
+
+.profile__btn__shuffle span {
+  color: var(--bg-main);
+  font-size: 18px;
+}
+
+.profile__btn__subs {
+  width: 40%;
+  height: 60px;
+  border-radius: 30px;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.profile__btn__subs span {
+  margin: 0;
+  font-size: 20px;
+}
+.profile__btn__subs span i {
+  margin-right: 3px;
+}

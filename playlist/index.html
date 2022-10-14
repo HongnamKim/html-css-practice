@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="left">
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__btn">
+            <a class="nav__link" href="#"
+              ><i class="fa-solid fa-chevron-left fa-lg"></i
+            ></a>
+          </li>
+          <li class="nav__btn">
+            <a class="nav__link" href="#"
+              ><i class="fa-solid fa-magnifying-glass fa-lg"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+      <article>
+        <div class="profile">
+          <div class="profile__pic">
+            <img src="img/Yorushika_Logo.jpg" width="100%" />
+          </div>
+          <h2 class="profile__singer">Yorushika(ヨルシカ)</h2>
+          <h3 class="profile__jenre">J-pop, Rock</h3>
+          <div class="profile__btn">
+            <div class="profile__btn__shuffle"><span>Shuffle</span></div>
+            <div class="profile__btn__subs">
+              <span><i class="fa-solid fa-heart"></i>257M</span>
+            </div>
+          </div>
+        </div>
+        <div class="playList">
+          <ul class="playList__list">
+            <li class="playList__song">
+              <div class="playList__song__cover">
+                <img src="img/2nd-album.jpeg" width="100%" />
+              </div>
+              <div class="playList__song__info">
+                <h3>그저 네게 맑아라</h3>
+                <h4>요루시카•패배자에게 앵콜은 필요 없어</h4>
+              </div>
+              <div class="playList__song__btn">
+                <i class="fa-solid fa-ellipsis-vertical fa-lg"></i>
+              </div>
+            </li>
+            <li class="playList__song">
+              <div class="playList__song__cover">
+                <img src="img/1st-full-album.jpeg" width="100%" />
+              </div>
+              <div class="playList__song__info">
+                <h3>그래서 나는 음악을 그만두었다</h3>
+                <h4>요루시카•그래서 나는 음악을 그만두었다</h4>
+              </div>
+              <div class="playList__song__btn">
+                <i class="fa-solid fa-ellipsis-vertical fa-lg"></i>
+              </div>
+            </li>
+            <li class="playList__song" id="now">
+              <div class="playList__song__cover">
+                <img src="img/1st-mini-album.jpeg" width="120%" />
+              </div>
+              <div class="playList__song__info">
+                <h3>말해줘｡</h3>
+                <h4>요루시카•여름풀이 방해를 해</h4>
+              </div>
+              <div class="playList__song__btn">
+                <i class="fa-solid fa-ellipsis-vertical fa-lg"></i>
+              </div>
+            </li>
+            <li class="playList__song">
+              <div class="playList__song__cover">
+                <img src="img/3rd-full-album.jpeg" width="100%" />
+              </div>
+              <div class="playList__song__info">
+                <h3>꽃에 망령</h3>
+                <h4>요루시카•도작</h4>
+              </div>
+              <div class="playList__song__btn">
+                <i class="fa-solid fa-ellipsis-vertical fa-lg"></i>
+              </div>
+            </li>
+            <li class="playList__song">
+              <div class="playList__song__cover">
+                <img src="img/chinokate.jpeg" width="100%" />
+              </div>
+              <div class="playList__song__info">
+                <h3>チノカテ</h3>
+                <h4>요루시카•チノカテchi</h4>
+              </div>
+              <div class="playList__song__btn">
+                <i class="fa-solid fa-ellipsis-vertical fa-lg"></i>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </article>
+      <div class="nowPlaying">
+        <div class="nowPlaying__bg">
+          <div class="nowPlaying__info">
+            <h3 class="nowPlaying__info__title">말해줘｡</h3>
+            <h4 class="nowPlaying__info__singer">
+              요루시카•여름풀이 방해를 해
+            </h4>
+          </div>
+          <div class="nowPlaying__btn">
+            <div class="nowPlaying__btn__previous">
+              <i class="fa-solid fa-backward-step fa-xl"></i>
+            </div>
+            <div class="nowPlaying__btn__pause">
+              <i class="fa-solid fa-pause fa-2x"></i>
+            </div>
+            <div class="nowPlaying__btn__next">
+              <i class="fa-solid fa-forward-step fa-xl"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="right">
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__btn">
+            <a class="nav__link" href="#"
+              ><i class="fa-solid fa-chevron-left fa-lg"></i
+            ></a>
+          </li>
+          <li class="nav__btn">
+            <a class="nav__link" href="#"
+              ><i class="fa-solid fa-ellipsis-vertical fa-lg"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+      <article>
+        <div class="album">
+          <div class="album__cover">
+            <img src="img/1st-mini-album.jpeg" width="120%" />
+          </div>
+          <div class="album__info">
+            <h2 class="album__info__title">말해줘｡</h2>
+            <h3 class="album__info__singer">요루시카</h3>
+          </div>
+        </div>
+        <div class="play-bar">
+          <div class="play-bar__time">
+            <div class="play-bar__time__now"><span>1:56</span></div>
+            <div class="play-bar__time__end"><span>4:03</span></div>
+          </div>
+          <div class="play-bar__progress">
+            <div class="play-bar__progress__previous"></div>
+            <div class="play-bar__progress__reserve"></div>
+            <div class="play-bar__progress__now"></div>
+          </div>
+        </div>
+        <div class="play-btn">
+          <div class="play-btn__spc">
+            <i class="fa-solid fa-repeat fa-lg"></i>
+          </div>
+          <div class="play-btn__change">
+            <i class="fa-solid fa-backward-step fa-3x"></i>
+          </div>
+          <div class="play-btn__play">
+            <i class="fa-solid fa-play fa-4x"></i>
+          </div>
+          <div class="play-btn__change">
+            <i class="fa-solid fa-forward-step fa-3x"></i>
+          </div>
+          <div class="play-btn__spc">
+            <i class="fa-solid fa-shuffle fa-lg"></i>
+          </div>
+        </div>
+      </article>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/d6d812d2c1.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
